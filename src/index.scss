@@ -1,0 +1,21 @@
+@import './base.scss';
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap');
+@import './styles/font.scss';
+@layer base {
+  body * {
+    @apply text-base;
+    @apply font-sarabun;
+  }
+}
+
+body *,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  font-family: 'Sarabun', sans-serif;
+}

@@ -1,0 +1,93 @@
+@import '../../../base.scss';
+.kk-button-container {
+  border-radius: $radius;
+  overflow: hidden;
+}
+.kk-button {
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+  padding: $padding-s $padding;
+  border-radius: $radius;
+  height: fit-content;
+  color: $color-text-dark;
+  box-shadow: $shadow-box-1;
+  &:hover {
+    filter: brightness(1.5);
+  }
+  &.blur {
+    backdrop-filter: blur(6px);
+  }
+
+  &.default {
+    &.dark {
+      background-color: $color-card-dark;
+      color: $color-text-dark;
+    }
+    &.light {
+      background-color: $color-card-light;
+      color: $color-text-light;
+    }
+    &.blur {
+      &.dark {
+        background-color: $color-card-dark-blur;
+      }
+      &.light {
+        background-color: $color-card-light-blur;
+      }
+    }
+  }
+
+  &.primary {
+    background-color: $color-primary;
+    &.blur {
+      background-color: $color-primary-blur;
+    }
+  }
+
+  &.secondary {
+    background-color: $color-secondary;
+    &.blur {
+      background-color: $color-secondary-blur;
+    }
+  }
+
+  &.success {
+    background-color: $color-success;
+    &.blur {
+      background-color: $color-success-blur;
+    }
+  }
+
+  &.warning {
+    background-color: $color-warning;
+    &.blur {
+      background-color: $color-warning-blur;
+    }
+  }
+
+  &.error,
+  &.danger {
+    background-color: $color-danger;
+    &.blur {
+      background-color: $color-danger-blur;
+    }
+  }
+
+  &.info {
+    background-color: $color-info;
+    &.blur {
+      background-color: $color-info-blur;
+    }
+  }
+
+  &.disabled {
+    background-color: $color-disabled;
+    color: $color-disabled-dark;
+    text-decoration: none;
+    cursor: not-allowed;
+    &.blur {
+      background-color: $color-disabled-blur;
+    }
+  }
+}

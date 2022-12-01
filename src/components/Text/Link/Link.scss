@@ -1,0 +1,30 @@
+@import '../../../base.scss';
+
+.kk-link {
+  cursor: pointer;
+  text-decoration: underline;
+  &.primary, &.default {
+    color: $color-secondary;
+  }
+  &.secondary {
+    color: $color-primary;
+  }
+  &.success {
+    color: $color-success;
+  }
+  &.warning {
+    color: $color-warning;
+  }
+  &.error, &.danger {
+    color: $color-danger;
+  }
+  &.info {
+    color: $color-info;
+  }
+
+  &.disabled {
+    color: $color-disabled;
+    text-decoration: none;
+    cursor: not-allowed;
+  }
+}

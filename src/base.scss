@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;A00;500;600;700&display=swap');
+
+$color-primary: #00729c;
+$color-active: #334a73;
+$color-secondary: #00c1a0;
+$color-success: #7ecd78;
+$color-danger: #be1313;
+$color-warning: #d7a31a;
+$color-info: #545888;
+$color-disabled: #a5abbd;
+$color-disabled-dark: #5e616b;
+
+$color-primary-blur: #00729ca0;
+$color-active-blur: #334a73a0;
+$color-secondary-blur: #00c1a0a0;
+$color-success-blur: #7ecd78a0;
+$color-danger-blur: #be1313a0;
+$color-warning-blur: #d7a31aa0;
+$color-info-blur: #545888a0;
+$color-disabled-blur: #a5abbda0;
+$color-disabled-dark-blur: #5e616ba0;
+
+$color-text-light: #0d1115;
+$color-text-dark: #f6f9ff;
+
+$color-background-light: #f7f8fa;
+$color-card-light: #fdfdfd;
+$color-background-dark: #0d1115;
+$color-card-dark: #2d3034;
+
+$color-background-light-blur: #f7f8fa30;
+$color-card-light-blur: #fdfdfd30;
+$color-background-dark-blur: #0d111530;
+$color-card-dark-blur: #2d303430;
+
+$radius-xs: 4px;
+$radius-s: 6px;
+$radius-m: 8px;
+$radius-l: 12px;
+$radius-xl: 16px;
+$radius: $radius-m;
+
+$font-size-xs: 10px;
+$font-size-s: 12px;
+$font-size-m: 14px;
+$font-size-l: 16px;
+$font-size-xl: 20px;
+$font-size-xxl: 24px;
+$font-size: $font-size-m;
+
+$margin-xs: 4px;
+$margin-s: 6px;
+$margin-m: 8px;
+$margin-l: 12px;
+$margin-xl: 16px;
+$margin: $margin-m;
+
+$padding-xs: 4px;
+$padding-s: 6px;
+$padding-m: 8px;
+$padding-l: 12px;
+$padding-xl: 16px;
+$padding: $padding-m;
+
+$shadow-box-1: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+body *,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  font-family: 'Sarabun', sans-serif;
+}
+
+.m-0 {
+  margin: 0;
+}

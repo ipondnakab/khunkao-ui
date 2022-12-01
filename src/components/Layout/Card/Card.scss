@@ -1,0 +1,55 @@
+@import '../../../base.scss';
+
+.kk-card {
+  border-radius: $radius;
+  padding: $padding;
+  width: fit-content;
+  transition: all 0.3s ease;
+  max-width: 360px;
+  font-size: $font-size-m;
+  box-shadow: $shadow-box-1;
+  position: relative;
+
+  &.dark {
+    background-color: $color-card-dark;
+    color: $color-text-dark;
+    &.blur {
+      background-color: $color-card-dark-blur;
+    }
+  }
+  &.light {
+    background-color: $color-card-light;
+    color: $color-text-light;
+    &.blur {
+      background-color: $color-card-light-blur;
+    }
+  }
+
+  &.blur {
+    backdrop-filter: blur(16px);
+  }
+}
+
+.kk-card-header-container {
+  display: flex;
+  margin-bottom: $margin;
+  padding: $padding;
+  padding-top: 0;
+}
+
+.kk-card-footer-container {
+  display: flex;
+  margin-top: $margin;
+  padding: $padding;
+}
+
+.kk-card-body-container {
+  padding: $padding;
+}
+
+.close-button-container {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  cursor: pointer;
+}

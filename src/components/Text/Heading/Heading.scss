@@ -1,0 +1,32 @@
+@import '../../../base.scss';
+
+.kk-header {
+  &.default {
+    color: $color-text-light;
+    &.dark {
+      color: $color-text-dark;
+    }
+    &.light {
+      color: $color-text-light;
+    }
+  }
+  &.primary {
+    color: $color-primary;
+  }
+  &.secondary {
+    color: $color-secondary;
+  }
+  &.success {
+    color: $color-success;
+  }
+  &.warning {
+    color: $color-warning;
+  }
+  &.error,
+  &.danger {
+    color: $color-danger;
+  }
+  &.info {
+    color: $color-info;
+  }
+}
