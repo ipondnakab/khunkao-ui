@@ -8,7 +8,6 @@
   max-width: 360px;
   font-size: $font-size-m;
   box-shadow: $shadow-box-1;
-  position: relative;
 
   &.dark {
     background-color: $color-card-dark;
@@ -28,6 +27,17 @@
   &.blur {
     backdrop-filter: blur(16px);
   }
+
+  & > .kk-card-body-container {
+    padding: $padding;
+  }
+
+  & > .close-button-container {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    cursor: pointer;
+  }
 }
 
 .kk-card-header-container {
@@ -41,15 +51,4 @@
   display: flex;
   margin-top: $margin;
   padding: $padding;
-}
-
-.kk-card-body-container {
-  padding: $padding;
-}
-
-.close-button-container {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  cursor: pointer;
 }

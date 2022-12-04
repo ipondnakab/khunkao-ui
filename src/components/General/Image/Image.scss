@@ -1,0 +1,38 @@
+@import '../../../base.scss';
+.kk-image-container {
+  border-radius: $radius-s;
+  overflow: hidden;
+  background-color: $color-card-light-blur;
+  backdrop-filter: blur(6px);
+  position: relative;
+}
+
+.kk-front-image {
+  transition: all 0.3s ease;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $color-card-dark-blur;
+  backdrop-filter: blur(6px);
+  color: $color-text-dark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  opacity: 0;
+  &:hover {
+    transition: all 0.3s ease;
+    opacity: 1;
+  }
+}
+
+.kk-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+

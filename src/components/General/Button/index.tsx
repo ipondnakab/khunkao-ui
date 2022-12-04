@@ -11,6 +11,8 @@ export interface ButtonPropsType
     >,
     BaseComponentProps {
   disabled?: boolean;
+  color?: string;
+  textColor?: string;
 }
 
 const Button: React.FC<ButtonPropsType> = ({
@@ -20,6 +22,8 @@ const Button: React.FC<ButtonPropsType> = ({
   componentType = BaseTypeEnum.default,
   theme,
   themeMode,
+  color,
+  textColor,
   ...props
 }) => {
   const cn = classnames([
@@ -28,11 +32,16 @@ const Button: React.FC<ButtonPropsType> = ({
     theme?.toLowerCase(),
     themeMode?.toLowerCase(),
     componentType.toLowerCase(),
+
     className,
   ]);
   return (
     <span className="kk-button-container">
-      <button {...props} className={cn}>
+      <button
+        {...props}
+        style={{ ...props.style, backgroundColor: color, color: textColor }}
+        className={cn}
+      >
         {children}
       </button>
     </span>

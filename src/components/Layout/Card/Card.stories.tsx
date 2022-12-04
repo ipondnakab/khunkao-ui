@@ -4,6 +4,7 @@ import Card, { CardFooter, CardPropsType } from '.';
 import { ThemeEnum, ThemeModeEnum } from '../../../global/enums/theme-mode';
 import BackgroundStory from '../../Util/BackgroundStory';
 import Button from '../../General/Button';
+import Image from '../../General/Image';
 
 const meta: Meta = {
   title: 'Layout/Card',
@@ -38,8 +39,16 @@ Default.args = {
 
 export const HeaderAndFooter = Template.bind({});
 HeaderAndFooter.args = {
-  children:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+  children: (
+    <div>
+      <Image src="https://picsum.photos/600/280" />
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s,
+      </p>
+    </div>
+  ),
   cardHeader: 'Title Header',
   cardFooter: (
     <CardFooter

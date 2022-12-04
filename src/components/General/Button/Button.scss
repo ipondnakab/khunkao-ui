@@ -20,15 +20,14 @@
   }
 
   &.default {
-    &.dark {
-      background-color: $color-card-dark;
-      color: $color-text-dark;
-    }
+    background-color: $color-card-dark;
     &.light {
       background-color: $color-card-light;
       color: $color-text-light;
     }
     &.blur {
+      color: $color-text-dark;
+      border: 1px solid $color-card-light;
       &.dark {
         background-color: $color-card-dark-blur;
       }
